@@ -9,9 +9,9 @@ RUN npm install -g npm@latest
 
 RUN npm install express
 
-# RUN node seeds/seed.js
-
 COPY . .
+
+RUN node seeds/seed.js
 
 EXPOSE 3000
 
